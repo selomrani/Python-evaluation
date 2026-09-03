@@ -1,5 +1,5 @@
 # min and max of a list
-from fileinput import fileno
+
 
 
 def find_max_and_min(lst):
@@ -54,4 +54,14 @@ def fuse_two_lists_then_sort(list1,list2):
     fused_list = list1 + list2
     print(sorted(fused_list))
 
-fuse_two_lists_then_sort(liste1,liste2)
+
+
+# Python list Comprehention
+
+def square_of_even_numbers(numbers):
+    return [item**2 for item in numbers if item % 2 == 0]
+
+numbers = [3, 12, 7, 25, 8, 19, 2]
+
+print(square_of_even_numbers(numbers))
+
